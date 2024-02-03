@@ -42,7 +42,7 @@ public class InvoiceAction extends ActionSupport  {
             addFieldError("invoiceBean.dateTo", "La fecha final debe ser mayor que la fecha inicial.");
         }
         if (invoiceBean.getCantidad() <= 0){
-            addFieldError("invoiceBean.cantidad","El importe tiene que ser positivo y superior a 0");
+            addFieldError("invoiceBean.cantidad","El importe tiene que ser positivo y superior a 0!");
         }
     }
 }
