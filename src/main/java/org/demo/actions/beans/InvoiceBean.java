@@ -7,7 +7,6 @@ public class InvoiceBean {
     private String subject;
     private Date dateFrom;
     private Date dateTo;
-
     public Date getDateFrom() {
         return dateFrom;
     }
@@ -30,5 +29,14 @@ public class InvoiceBean {
 
     public void setSubject(String subject) {
         this.subject = subject;
+    }
+
+    private int cantidad;
+    public int getCantidad() {return cantidad; }
+    public void setCantidad(int cantidad) {this.cantidad = cantidad; }
+
+    public double dameImporteConIva() {
+        double taxRate = 0.21; // Para hacer la cuenta del IVA del 21%
+        return this.cantidad * (1 + taxRate);
     }
 }

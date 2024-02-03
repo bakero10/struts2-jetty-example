@@ -12,6 +12,10 @@
 <body>
 
     <h1>Resumen de factura: </h1>
-
+    <p>Concepto: <s:property value="invoiceBean.subject" /></p>
+        <p>Fecha inicial: <s:property value="invoiceBean.dateFrom" /></p>
+        <p>Fecha final: <s:property value="invoiceBean.dateTo" /></p>
+        <p>Importe: <s:property value="invoiceBean.cantidad" /></p>
+        <p>Importe con IVA: <s:property value="#importeConIva" /></p>
 </body>
 </html>
